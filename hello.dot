@@ -1,0 +1,20 @@
+digraph Program {
+Actor_0 [label="Actor: Main"];
+MethodCall_1 [label="call: print"];
+String_2 [label="Hello, world!"]
+MethodCall_1 -> String_2
+MemberAccess_4 [label="MemberAccess: out"];
+MemberAccess_4 -> Variable_3
+Variable_3 [label="Variable: env"]
+MethodCall_1 -> MemberAccess_4
+Actor_0 -> MethodCall_1
+MethodCall_5 [label="call: print"];
+String_6 [label="Goodbye, world!"]
+MethodCall_5 -> String_6
+MemberAccess_8 [label="MemberAccess: out"];
+MemberAccess_8 -> Variable_7
+Variable_7 [label="Variable: env"]
+MethodCall_5 -> MemberAccess_8
+Actor_0 -> MethodCall_5
+
+}
